@@ -1,0 +1,10 @@
+lastUpgrade=00935
+proj.pluginVersion=0.9.35
+proj.AppId=838782024643
+and.BundleId=net.polareclipse.lowpolydefense
+proj.classDir=Assets
+proj.ConstantsClassName=GPGSIds
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--%0d%0aGoogle+Play+game+services+IDs.%0d%0aSave+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.%0d%0a--%3e%0d%0a%3cresources%3e%0d%0a++%3cstring+name%3d%22app_id%22%3e838782024643%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22package_name%22%3enet.polareclipse.lowpolydefense%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_crystal_guard%22%3eCgkIw_e32rQYEAIQAQ%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_crystal_protector%22%3eCgkIw_e32rQYEAIQAg%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_crystal_guardian%22%3eCgkIw_e32rQYEAIQAw%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_builder%22%3eCgkIw_e32rQYEAIQBA%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_artisan%22%3eCgkIw_e32rQYEAIQBQ%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_craftsman%22%3eCgkIw_e32rQYEAIQBw%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_tutorial_master%22%3eCgkIw_e32rQYEAIQCA%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_completionist%22%3eCgkIw_e32rQYEAIQCQ%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22achievement_extreme_completionist%22%3eCgkIw_e32rQYEAIQCg%3c%2fstring%3e%0d%0a++%3cstring+name%3d%22leaderboard_awesome_leaderboard%22%3eCgkIw_e32rQYEAIQBg%3c%2fstring%3e%0d%0a%3c%2fresources%3e%0d%0a
+and.ClientId=
+proj.requireGPlus=false
+android.SetupDone=true

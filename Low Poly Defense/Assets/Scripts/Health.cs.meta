@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 335fd2cab0ed92740bb2a9f45a71bff4
+timeCreated: 1480100333
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - healthBarPrefab: {fileID: 1000011586403892, guid: 29873ec6e638c3f4e909ff570f94b078,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

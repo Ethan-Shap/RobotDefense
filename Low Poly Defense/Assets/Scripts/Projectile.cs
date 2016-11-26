@@ -48,7 +48,7 @@ public class Projectile : MonoBehaviour {
                 else
                 {
                     target = targetEnemies == true ? GetClosestEnemy() : GetClosestTower();
-                    if (!target && !target.gameObject.activeInHierarchy)
+                    if (!target)
                         Destroy(gameObject); 
                 }
             }

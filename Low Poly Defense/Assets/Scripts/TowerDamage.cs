@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TowerDamage : MonoBehaviour 
 {
-    public enum DamageType { Projectile, AreaOfEffect }
+    public enum DamageType { Projectile, AreaOfEffect, Healing }
     public DamageType damageType;
 
     // General Vars
@@ -51,6 +51,12 @@ public class TowerDamage : MonoBehaviour
             if(!projectilesParent)
                 projectilesParent = new GameObject("Projectiles").transform;
         }
+
+        if(damageType == DamageType.Healing)
+        {
+
+        }
+
         nextAttackTime = 0;
     }
 

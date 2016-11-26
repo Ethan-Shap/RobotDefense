@@ -34,6 +34,7 @@ public class EnemyDamage : MonoBehaviour
     private void Awake()
     {
         enemy = GetComponent<Enemy>();
+        Debug.Log(enemy.Damage);
         damage = enemy.Damage;
 
         if (damageType == DamageType.AreaOfEffect)
@@ -69,7 +70,7 @@ public class EnemyDamage : MonoBehaviour
 
                 // Deal damage to enemy
                 if (damageType == DamageType.AreaOfEffect)
-                    currentTower.GetComponent<Health>().TakeDamage(enemy.Damage);
+                    currentTower.GetComponent<Health>().TakeDamage(damage);
                 else if (damageType == DamageType.Projectile)
                     ShootProjectile();
             }

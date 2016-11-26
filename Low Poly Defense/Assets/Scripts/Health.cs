@@ -12,6 +12,7 @@ public class Health : MonoBehaviour {
     private int health = 100;
     private int defaultHealth;
 
+    public bool showHealthBar = false;
     private List<Transform> healthBars;
     private Material fullBarMat;
     private Material emptyBarMat;
@@ -26,7 +27,8 @@ public class Health : MonoBehaviour {
         set
         {
             health = value;
-            UpdateHealthBar();
+            if(showHealthBar)
+                UpdateHealthBar();
         }
     }
 
@@ -35,7 +37,7 @@ public class Health : MonoBehaviour {
         healthBars = new List<Transform>();
 
         defaultHealth = CurrentHealth;
-        if (healthBarPrefab)
+        if (showHealthBar)
         {
             CreateHealthBar();
             UpdateHealthBar();

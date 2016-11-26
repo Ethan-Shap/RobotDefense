@@ -48,7 +48,7 @@ public class Projectile : MonoBehaviour {
                 else
                 {
                     target = targetEnemies == true ? GetClosestEnemy() : GetClosestTower();
-                    if (target && !target.gameObject.activeInHierarchy)
+                    if (!target && !target.gameObject.activeInHierarchy)
                         Destroy(gameObject); 
                 }
             }
@@ -59,14 +59,14 @@ public class Projectile : MonoBehaviour {
     {
         Enemy[] sortedEnemies = EnemyManager.instance.GetActiveEnemies();
         sortedEnemies = sortedEnemies.OrderBy(x => Vector3.SqrMagnitude(transform.position - x.transform.position)).ToArray();
-        return sortedEnemies[0] == null ? null : sortedEnemies[0].transform;
+        return sortedEnemies.Length == 0 ? null : sortedEnemies[0].transform;
     }
 
     private Transform GetClosestTower()
     {
         Tower[] sortedTowers = TowerManager.instance.GetActiveTowers().ToArray();
         sortedTowers = sortedTowers.OrderBy(x => Vector3.SqrMagnitude(transform.position - x.transform.position)).ToArray();
-        return sortedTowers[0].transform;
+        return sortedTowers.Length == 0 ? null : sortedTowers[0].transform;
     }
 
     private void MoveTowardsTarget()
@@ -87,7 +87,6 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
     {
-        Debug.Log("hit");
         if (targetEnemies)
         {
             if (col.tag == "Enemy")
@@ -100,6 +99,7 @@ public class Projectile : MonoBehaviour {
             }
         } else
         {
+            Debug.Log(col.tag);
             if (col.tag == "Tower")
             {
                 if (col.GetComponent<Health>())
